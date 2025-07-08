@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import { ArrowRight, Gift, Search, ShoppingBag, User } from "lucide-react";
 
 function App() {
@@ -16,6 +15,7 @@ function App() {
   const getGrid = (n: number): React.ReactElement => {
     return (
       <div className="grid">
+        <img src="" alt="" />
         {Array.from({ length: n }).map((_, i) => (
           <img key={i} src={urlArr[i + 3]} alt="" />
         ))}
